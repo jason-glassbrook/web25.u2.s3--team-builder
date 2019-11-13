@@ -14,21 +14,21 @@ Commit your code regularly and meaningfully. This helps both you and your team l
 
 In this project you'll build an app that will keep track of memebers of a team. You'll be able to add members to this team as well as edit their details.
 
-## Project Set Up
+## Project Setup
 
 **Follow these steps to set up and work on your project:**
 
--   [ ] Create a forked copy of this project.
--   [ ] Add your team lead as collaborator on GitHub.
--   [ ] Clone your ***own*** version of the repository (Not Lambda's by mistake!).
+-   [x] Create a forked copy of this project.
+-   [x] Add your team lead as collaborator on GitHub.
+-   [x] Clone your ***own*** version of the repository (Not Lambda's by mistake!).
 
--   [ ] Use `npx create-react-app team-builder` or `yarn create react-app team-builder` to initiate the project.
--   [ ] `cd` into your `team-builder` directory.
--   [ ] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`.
+-   [x] Use `npx create-react-app team-builder` or `yarn create react-app team-builder` to initiate the project.
+-   [x] `cd` into your `team-builder` directory.
+-   [x] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`.
 
--   [ ] Create a new branch: `git checkout -b <firstName-lastName>`.
--   [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
--   [ ] Push commits: `git push origin <firstName-lastName>`.
+-   [x] Create a new branch: `git checkout -b <firstName-lastName>`.
+-   [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+-   [x] Push commits: `git push origin <firstName-lastName>`.
 
 **Follow these steps for completing your project:**
 
