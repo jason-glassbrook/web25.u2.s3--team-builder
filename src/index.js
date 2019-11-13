@@ -9,7 +9,7 @@ import App from './App';
 /// styles ///
 import 'reset-css/reset.css';
 import 'normalize-css/normalize.css';
-import './index.css';
+import './styles/index.css';
 
 /***************************************
   APP
