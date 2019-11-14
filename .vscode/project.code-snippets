@@ -21,7 +21,7 @@
 ///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 "import external modules" : {
 	"scope"  : "javascriptreact",
-	"prefix" : "import_external-modules",
+	"prefix" : "import--external-modules",
 	"body"   : [
 		"/// external modules ///",
 		"import ${1:Thing} from '${2:Package}';",
@@ -29,7 +29,7 @@
 },
 "import internal modules" : {
 	"scope"  : "javascriptreact",
-	"prefix" : "import_internal-modules",
+	"prefix" : "import--internal-modules",
 	"body"   : [
 		"/// internal modules ///",
 		"import ${1:Thing} from '${2:./Path}';",
@@ -37,18 +37,18 @@
 },
 "import styles" : {
 	"scope"  : "javascriptreact",
-	"prefix" : "import_styles",
+	"prefix" : "import--styles",
 	"body"   : [
 		"/// styles ///",
 		"import './styles/${1:StylesPath}';",
 	]
 },
 ///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-/// components
+/// component modules
 ///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-"react component as module" : {
+"react component module as function-block" : {
 	"scope"  : "javascriptreact",
-	"prefix" : "react-component_module",
+	"prefix" : "react-component-module--function-block",
 	"body"   : [
 		"/// external modules ///",
 		"import React from 'react';",
@@ -61,7 +61,7 @@
 		"/***************************************",
 		"  COMPONENT",
 		"***************************************/",
-		"function ${1:${TM_SELECTED_TEXT:MyComponent}} (${2:props}) {",
+		"function ${1:MyComponent} (${2:props}) {",
 		"  return (",
 		"    ${0:<div></div>}",
 		"  );",
@@ -72,22 +72,25 @@
 		"",
 	]
 },
-"react component as block-fun" : {
+///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+/// components
+///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+"react component as function-block" : {
 	"scope"  : "javascriptreact",
-	"prefix" : "react-component_block-fun",
+	"prefix" : "react-component--function-block",
 	"body"   : [
-		"function ${1:${TM_SELECTED_TEXT:MyComponent}} (${2:props}) {",
+		"function ${1:MyComponent} (${2:props}) {",
 		"  return (",
 		"    ${0:<div></div>}",
 		"  );",
 		"};",
 	]
 },
-"react component as const-fun" : {
+"react component as function-expression" : {
 	"scope"  : "javascriptreact",
-	"prefix" : "react-component_const-fun",
+	"prefix" : "react-component--function-expression",
 	"body"   : [
-		"const ${1:${TM_SELECTED_TEXT:MyComponent}} = function (${2:props}) {",
+		"const ${1:MyComponent} = function (${2:props}) {",
 		"  return (",
 		"    ${0:<div></div>}",
 		"  );",
@@ -96,20 +99,20 @@
 },
 "react component as arrow-to-block" : {
 	"scope"  : "javascriptreact",
-	"prefix" : "react-component_arrow-to-block",
+	"prefix" : "react-component--arrow-to-block",
 	"body"   : [
-		"const ${1:${TM_SELECTED_TEXT:MyComponent}} = (${2:props}) => {",
+		"const ${1:MyComponent} = (${2:props}) => {",
 		"  return (",
 		"    ${0:<div></div>}",
 		"  );",
 		"};",
 	]
 },
-"react component as arrow-to-expr" : {
+"react component as arrow-to-expression" : {
 	"scope"  : "javascriptreact",
-	"prefix" : "react-component_arrow-to-expr",
+	"prefix" : "react-component--arrow-to-expression",
 	"body"   : [
-		"const ${1:${TM_SELECTED_TEXT:MyComponent}} = (${2:props}) => (",
+		"const ${1:MyComponent} = (${2:props}) => (",
 		"  ${0:<div></div>}",
 		");",
 	]
