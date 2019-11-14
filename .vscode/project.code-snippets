@@ -46,6 +46,56 @@
 ///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 /// component modules
 ///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+"react component module as arrow-to-block" : {
+	"scope"  : "javascriptreact",
+	"prefix" : "react-component-module--arrow-to-block",
+	"body"   : [
+		"/// external modules ///",
+		"import React from 'react';",
+		"",
+		"/***************************************",
+		"  STATES",
+		"***************************************/",
+		"const init = {};",
+		"",
+		"/***************************************",
+		"  COMPONENT",
+		"***************************************/",
+		"const ${1:MyComponent} = (${2:props}) => {",
+		"  return (",
+		"    ${0:<div></div>}",
+		"  );",
+		"};",
+		"",
+		"/**************************************/",
+		"export default ${1};",
+		"",
+	]
+},
+"react component module as arrow-to-expression" : {
+	"scope"  : "javascriptreact",
+	"prefix" : "react-component-module--arrow-to-expression",
+	"body"   : [
+		"/// external modules ///",
+		"import React from 'react';",
+		"",
+		"/***************************************",
+		"  STATES",
+		"***************************************/",
+		"const init = {};",
+		"",
+		"/***************************************",
+		"  COMPONENT",
+		"***************************************/",
+		"const ${1:MyComponent} = (${2:props}) => (",
+		"  ${0:<div></div>}",
+		");",
+		"",
+		"/**************************************/",
+		"export default ${1};",
+		"",
+	]
+},
 "react component module as function-block" : {
 	"scope"  : "javascriptreact",
 	"prefix" : "react-component-module--function-block",
@@ -72,9 +122,55 @@
 		"",
 	]
 },
+"react component module as function-expression" : {
+	"scope"  : "javascriptreact",
+	"prefix" : "react-component-module--function-expression",
+	"body"   : [
+		"/// external modules ///",
+		"import React from 'react';",
+		"",
+		"/***************************************",
+		"  STATES",
+		"***************************************/",
+		"const init = {};",
+		"",
+		"/***************************************",
+		"  COMPONENT",
+		"***************************************/",
+		"const ${1:MyComponent} = function (${2:props}) {",
+		"  return (",
+		"    ${0:<div></div>}",
+		"  );",
+		"};",
+		"",
+		"/**************************************/",
+		"export default ${1};",
+		"",
+	]
+},
 ///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 /// components
 ///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+"react component as arrow-to-block" : {
+	"scope"  : "javascriptreact",
+	"prefix" : "react-component--arrow-to-block",
+	"body"   : [
+		"const ${1:MyComponent} = (${2:props}) => {",
+		"  return (",
+		"    ${0:<div></div>}",
+		"  );",
+		"};",
+	]
+},
+"react component as arrow-to-expression" : {
+	"scope"  : "javascriptreact",
+	"prefix" : "react-component--arrow-to-expression",
+	"body"   : [
+		"const ${1:MyComponent} = (${2:props}) => (",
+		"  ${0:<div></div>}",
+		");",
+	]
+},
 "react component as function-block" : {
 	"scope"  : "javascriptreact",
 	"prefix" : "react-component--function-block",
@@ -95,26 +191,6 @@
 		"    ${0:<div></div>}",
 		"  );",
 		"};",
-	]
-},
-"react component as arrow-to-block" : {
-	"scope"  : "javascriptreact",
-	"prefix" : "react-component--arrow-to-block",
-	"body"   : [
-		"const ${1:MyComponent} = (${2:props}) => {",
-		"  return (",
-		"    ${0:<div></div>}",
-		"  );",
-		"};",
-	]
-},
-"react component as arrow-to-expression" : {
-	"scope"  : "javascriptreact",
-	"prefix" : "react-component--arrow-to-expression",
-	"body"   : [
-		"const ${1:MyComponent} = (${2:props}) => (",
-		"  ${0:<div></div>}",
-		");",
 	]
 },
 ///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
