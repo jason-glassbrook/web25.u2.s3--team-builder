@@ -46,14 +46,33 @@ html , body , .root , .App {
   App
 ***************************************/
 
-#forms > main , #lists > main {
+.App > section > main {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 }
 
-#forms > section , #lists > section {
+.App > section > * {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.App > section > *:first-child {
+  margin-top: 0;
+}
+.App > section > *:last-child {
+  margin-bottom: 0;
+}
+
+.App > section > main > section {
   flex: 1 1 50%;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.App > section > main > section:first-child {
+  margin-left: 0;
+}
+.App > section > main > section:last-child {
+  margin-right: 0;
 }
 
 /*******************
