@@ -16,37 +16,9 @@
 /// 	"description": "Log output to console"
 /// }
 
-///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-/// import
-///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-"import : external module" : {
-	"scope"  : "javascriptreact",
-	"prefix" : "import--external-module",
-	"body"   : [
-		"import ${2:${1}} from '${1:module}';${0}",
-	],
-},
-"import : internal module" : {
-	"scope"  : "javascriptreact",
-	"prefix" : "import--internal-module",
-	"body"   : [
-		"import ${3:${1}} from '${2:./path}/${1:module}';${0}",
-	],
-},
-"import : component" : {
-	"scope"  : "javascriptreact",
-	"prefix" : "import--component",
-	"body"   : [
-		"import ${3:${1}} from '${2:./components}/${1:Component}';${0}",
-	],
-},
-"import : data" : {
-	"scope"  : "javascriptreact",
-	"prefix" : "import--data",
-	"body"   : [
-		"import ${3:${1}} from '${2:./data}/${1:module}';${0}",
-	],
-},
+///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+/// IMPORT
+///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 "import : style" : {
 	"scope"  : "javascriptreact",
 	"prefix" : "import--style",
@@ -54,36 +26,9 @@
 		"import '${2:./styles}/${1:sheet.css}';${0}",
 	],
 },
-///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-/// import
-///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-"imports : external modules" : {
-	"scope"  : "javascriptreact",
-	"prefix" : "imports--external-modules",
-	"body"   : [
-		"/// external modules ///",
-		"import ${2:${1}} from '${1:module}';",
-		"${0}",
-	],
-},
-"imports : internal modules" : {
-	"scope"  : "javascriptreact",
-	"prefix" : "imports--internal-modules",
-	"body"   : [
-		"/// internal modules ///",
-		"import ${3:${1}} from '${2:./path}/${1:module}';",
-		"${0}",
-	],
-},
-"imports : data" : {
-	"scope"  : "javascriptreact",
-	"prefix" : "imports--data",
-	"body"   : [
-		"/// data ///",
-		"import ${3:${1}} from '${2:./data}/${1:module}';",
-		"${0}",
-	],
-},
+///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+/// IMPORTS
+///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 "imports : styles" : {
 	"scope"  : "javascriptreact",
 	"prefix" : "imports--styles",
@@ -93,9 +38,9 @@
 		"${0}",
 	],
 },
-///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-/// component modules
-///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+/// COMPONENT MODULES
+///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 "react component module as arrow-to-block" : {
 	"scope"  : "javascriptreact",
 	"prefix" : "react-component-module--arrow-to-block",
@@ -198,9 +143,9 @@
 		"",
 	],
 },
-///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-/// components
-///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+/// COMPONENTS
+///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 "react component as arrow-to-block" : {
 	"scope"  : "javascriptreact",
 	"prefix" : "react-component--arrow-to-block",
@@ -243,9 +188,9 @@
 		"};",
 	],
 },
-///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-/// code sections
-///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+/// CODE SECTIONS
+///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 "section : states" : {
 	"scope"  : "javascriptreact",
 	"prefix" : "states-section",
@@ -279,4 +224,5 @@
 		"",
 	],
 },
+///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 }
