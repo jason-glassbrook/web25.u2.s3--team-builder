@@ -22,6 +22,11 @@ const init = {
   COMPONENT
 ***************************************/
 function App () {
+  /// states ///
+  const [persons , setPersons] = React.useState (init.persons);
+  const [teams , setTeams] = React.useState (init.teams);
+
+  /// thing ///
   return (
     <div className="App">
     </div>
