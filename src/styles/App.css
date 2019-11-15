@@ -115,6 +115,15 @@ html , body , .root , .App {
   padding: 8px;
 }
 
-#lists .card-deck > .card {
+#lists .card {
   margin: 8px;
+}
+
+#lists .card > h4 {
+  font-weight: bold;
+}
+
+span.data-id {
+  font-weight: normal;
+  color: var(--tw-gray-500);
 }
