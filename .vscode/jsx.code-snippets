@@ -17,30 +17,80 @@
 /// }
 
 ///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-/// imports
+/// import
 ///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-"import external modules" : {
+"import : external module" : {
 	"scope"  : "javascriptreact",
-	"prefix" : "import--external-modules",
+	"prefix" : "import--external-module",
+	"body"   : [
+		"import ${2:${1}} from '${1:module}';${0}",
+	],
+},
+"import : internal module" : {
+	"scope"  : "javascriptreact",
+	"prefix" : "import--internal-module",
+	"body"   : [
+		"import ${3:${1}} from '${2:./path}/${1:module}';${0}",
+	],
+},
+"import : component" : {
+	"scope"  : "javascriptreact",
+	"prefix" : "import--component",
+	"body"   : [
+		"import ${3:${1}} from '${2:./components}/${1:Component}';${0}",
+	],
+},
+"import : data" : {
+	"scope"  : "javascriptreact",
+	"prefix" : "import--data",
+	"body"   : [
+		"import ${3:${1}} from '${2:./data}/${1:module}';${0}",
+	],
+},
+"import : style" : {
+	"scope"  : "javascriptreact",
+	"prefix" : "import--style",
+	"body"   : [
+		"import '${2:./styles}/${1:sheet.css}';${0}",
+	],
+},
+///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+/// import
+///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+"imports : external modules" : {
+	"scope"  : "javascriptreact",
+	"prefix" : "imports--external-modules",
 	"body"   : [
 		"/// external modules ///",
-		"import ${1:Thing} from '${2:Package}';",
+		"import ${2:${1}} from '${1:module}';",
+		"${0}",
 	],
 },
-"import internal modules" : {
+"imports : internal modules" : {
 	"scope"  : "javascriptreact",
-	"prefix" : "import--internal-modules",
+	"prefix" : "imports--internal-modules",
 	"body"   : [
 		"/// internal modules ///",
-		"import ${1:Thing} from '${2:./Path}';",
+		"import ${3:${1}} from '${2:./path}/${1:module}';",
+		"${0}",
 	],
 },
-"import styles" : {
+"imports : data" : {
 	"scope"  : "javascriptreact",
-	"prefix" : "import--styles",
+	"prefix" : "imports--data",
+	"body"   : [
+		"/// data ///",
+		"import ${3:${1}} from '${2:./data}/${1:module}';",
+		"${0}",
+	],
+},
+"imports : styles" : {
+	"scope"  : "javascriptreact",
+	"prefix" : "imports--styles",
 	"body"   : [
 		"/// styles ///",
-		"import './styles/${1:StylesPath}';",
+		"import '${2:./styles}/${1:sheet.css}';",
+		"${0}",
 	],
 },
 ///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
