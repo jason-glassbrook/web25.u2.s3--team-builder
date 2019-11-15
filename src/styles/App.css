@@ -43,3 +43,41 @@ html , body , .root , .App {
 /***************************************
   App
 ***************************************/
+
+#forms > main , #lists > main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#forms > section , #lists > section {
+  flex: 1 1 50%;
+}
+
+/*******************
+  colors
+*******************/
+
+#forms {
+  background: #1A202C;
+}
+
+#person-form {
+  background: #F56565;
+}
+
+#team-form {
+  background: #ECC94B;
+}
+
+#lists {
+  background: #2D3748;
+}
+
+#persons-list {
+  background: #48BB78;
+}
+
+#teams-list {
+  background: #4299E1;
+}
