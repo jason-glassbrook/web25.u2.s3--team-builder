@@ -37,8 +37,8 @@ html , body , .root , .App {
 
 .card-deck {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: flex-start;
 }
 
@@ -105,4 +105,16 @@ html , body , .root , .App {
 
 #teams-list {
   background: var(--tw-blue-500);
+}
+
+/***************************************
+  Lists
+***************************************/
+
+#lists .card-deck {
+  padding: 8px;
+}
+
+#lists .card-deck > .card {
+  margin: 8px;
 }
