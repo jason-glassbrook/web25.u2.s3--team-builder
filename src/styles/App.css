@@ -5,7 +5,7 @@
 ***************************************/
 
 html {
-  background: #1A202C;
+  background: var(--tw-gray-900);
 }
 
 html , body , .root , .App {
@@ -61,25 +61,25 @@ html , body , .root , .App {
 *******************/
 
 #forms {
-  background: #1A202C;
+  background: var(--tw-gray-700);
 }
 
 #person-form {
-  background: #F56565;
+  background: var(--tw-red-500);
 }
 
 #team-form {
-  background: #ECC94B;
+  background: var(--tw-yellow-500);
 }
 
 #lists {
-  background: #2D3748;
+  background: var(--tw-gray-800);
 }
 
 #persons-list {
-  background: #48BB78;
+  background: var(--tw-green-500);
 }
 
 #teams-list {
-  background: #4299E1;
+  background: var(--tw-blue-500);
 }
