@@ -5,8 +5,14 @@ import React from 'react';
 import './styles/App.css';
 
 /// data ///
-import { protoPerson , listOfPersons } from './data/persons';
-import { protoTeam , listOfTeams } from './data/teams';
+import {
+  proto as protoPerson,
+  list as listOfPersons
+} from './data/persons';
+import {
+  proto as protoTeam,
+  list as listOfTeams
+} from './data/teams';
 
 /***************************************
   STATES
