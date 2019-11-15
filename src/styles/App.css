@@ -75,6 +75,10 @@ html , body , .root , .App {
   margin-right: 0;
 }
 
+header {
+  font-weight: bold;
+}
+
 /*******************
   colors
 *******************/
