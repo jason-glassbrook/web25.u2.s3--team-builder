@@ -1,9 +1,11 @@
+@import url('./colors.css');
+
 /***************************************
   basics
 ***************************************/
 
 html {
-  background: White;
+  background: #1A202C;
 }
 
 html , body , .root , .App {
