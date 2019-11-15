@@ -29,6 +29,25 @@ function App () {
   /// thing ///
   return (
     <div className="App">
+
+      <section className="forms">
+        <header>
+          <h2>Forms</h2>
+        </header>
+        <main>
+
+        </main>
+      </section>
+
+      <section className="lists">
+        <header>
+          <h2>Lists</h2>
+        </header>
+        <main>
+
+        </main>
+      </section>
+
     </div>
   );
 }
