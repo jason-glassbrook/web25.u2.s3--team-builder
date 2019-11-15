@@ -77,7 +77,7 @@ function App () {
               <ul className='card-deck'>
                 {persons.map ((person) => (
                   <li key={person.id} className='card'>
-                    <h4><span class='person-name'>{person.name}</span> <span class='person-id'>({person.id})</span></h4>
+                    <h4><span class='person-name'>{person.name}</span> <span class='data-id person-id'>({person.id})</span></h4>
                     <p class='person-role'>{person.role}</p>
                     <p class='person-email'>{person.email}</p>
                   </li>
@@ -94,7 +94,7 @@ function App () {
               <ul className='card-deck'>
                 {teams.map ((team) => (
                   <li key={team.id} className='card'>
-                  <h4><span class='team-name'>{team.name}</span> <span class='team-id'>({team.id})</span></h4>
+                  <h4><span class='team-name'>{team.name}</span> <span class='data-id team-id'>({team.id})</span></h4>
                   </li>
                 ))}
               </ul>
